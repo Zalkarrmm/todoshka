@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    width: 100%;
+}
+
+.form{
+    width: 50% !important;
+    margin: 1rem auto;
+}
+
+.content{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shorted{
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+
+.theme-selector{
+    width: 200px !important;
+    outline: none;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.dark{
+    background-color: #183650;
+}
+
+.light{
+    background-color: #efefef;
+}
+
+
+.completed{
+    text-decoration:line-through ;
+}
+
+.block_1{
+    border-radius: 0% !important; 
+}
+
+.submitBtn , .btn{
+    background-color: rgb(16, 86, 238);
+    border: none;
+    padding: 10px 15px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.arrows{
+    position: absolute;
+    background: linear-gradient( rgb(16, 86, 238) ,rgb(144, 168, 248));;
+    transition: .5s;
+}
+.arrow_top{
+    width: 3px;
+    height: 100%;
+    top: -100%;
+    right: 0%;
+}
+.submitBtn:hover{
+    box-shadow: 10px 10px 90px  blue , 10px 10px 30px rgb(29, 140, 231);
+    transition-delay: .3s;
+}
+.submitBtn:hover .arrow_bottom{
+    bottom: 100%;
+}
+.submitBtn:hover .arrow_top{
+    top: 100%;
+    transition-delay: .1s;
+}
+.submitBtn:hover .arrow_right{
+    right: 100%;
+    transition-delay: .3s ;
+}
+.submitBtn:hover .arrow_left{
+    left: 100%;
+    transition-delay: .2s;
+}
+.arrow_bottom{
+    width: 3px;
+    height: 100%;
+    bottom:  -100%;
+    left: 0%;
+}
+.arrow_right{
+    width: 100%;
+    height: 3px;
+    bottom: 0%;
+    right: -100%;
+}
+.arrow_left{
+    width: 100%;
+    height: 3px;
+    top: 0%;
+    left: -100%;
+}
+.btn-danger{
+    background-color: rgba(255, 51, 0, 0.829) !important;
+    border: none !important;
+}
+.btn-danger:hover{
+    background-color: red !important;
+    color: grey !important;
+}
+
+.navbar{
+    background-color: grey !important   ;
+}
+.navbar-brand{
+    color: rgb(255, 255, 0);
+}
+.btn-primary{
+    background-color: rgb(255, 255, 0) !important;
+    border: none !important;
+    color: rgb(16, 86, 238) !important;
+}
+.btn-primary:hover{
+    background-color: rgba(255, 238, 0, 0.829) !important;
+    color: black !important;
+}
+.btn{
+    border: none !important;
+    border-radius: 0px !important;
+}
+select{
+    border-radius: 0px !important;
+}
+
+@media screen and (max-width:450px){
+    .form{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width:420px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .signOutBtn{
+        margin: 10px;
+    }
+    .form{
+        margin: 20px;
+    }
+    .navbar-brand{
+        font-size: 30px !important;
+    }
+    .block_1{
+        margin-top: -10px;
+        font-size: 15px !important;
+        height: 52vh;
+    }
+    .block_1 textarea{
+        height: 80px !important;
+    }
+    .block_1 .card-title{
+        font-size: 20px !important;
+    }
+}
+@media screen and (max-width:300px){
+}

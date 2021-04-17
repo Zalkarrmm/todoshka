@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(173, 173, 173, 0.767) !important;
+}
+.card-header{
+    background-color: rgb(255, 231, 19) !important;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card{
+    width: 500px !important;
+}
+.card  .btn{
+    color: rgb(15, 118, 253) !important;
+    background-color: rgb(255, 231, 19) !important;
+    border: none;
+}
+.card .btn:hover {
+    box-shadow: 0px 0px 100px rgb(15, 118, 253) , 0px 0px 10px rgb(15, 118, 253) , 0px 0px 20px rgb(15, 118, 253) , 
+    0px 0px 30px rgb(15, 118, 253);
+}

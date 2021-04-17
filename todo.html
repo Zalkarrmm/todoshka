@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+        <div>
+            <a href="" class="navbar-brand">TODO app</a>
+        </div> 
+            <div class="m0-auto">
+                <select class="form-select theme-selector" aria-label="Default select example"> 
+                    <option value="dark">Dark</option>
+                    <option value="light" >Light</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="btn btn-danger signOutBtn">
+                    log out
+                </button>
+            </div>
+           
+    </nav>
+    <div class="form mt-5" >
+        <div class="card block_1">
+            <div >
+                <h3 class="card-title mb-0 text-center">Add new task</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="title form-control" placeholder="title">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class=' form-control description' type='text' rows="5" placeholder="Decription">     </textarea>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button class="submitBtn">New Task
+                            <span class="arrows arrow_top"></span>
+                            <span class="arrows arrow_bottom"></span>
+                            <span class="arrows arrow_left"></span>
+                            <span class="arrows arrow_right"></span>
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="row cards">
+            <div class="col-lg-6 mb-4">
+                <div class="card blocks">
+                    <div class="card-header">
+                        <h3 class="card-title mb-0">Title</h3>
+                    </div>
+                    <div class="card-body content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos similique vel ducimus obcaecati expedita, perferendis possimus non voluptate totam commodi accusamus magnam sapiente harum eius impedit assumenda quaerat. Voluptatum?
+                        </p>
+                        <span>04/07/2021 9:10:48 PM </span>
+                    </div>
+                    <div class="card-header p-3 d-flex align-items-center justify-content-around footerr">
+                        <button class="btn btn-danger">Delete</button>
+                        <button class="btn btn-primary">Complete</button>
+                        <button class="btn btn-info">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</body>
+</html>
